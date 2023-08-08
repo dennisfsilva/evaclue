@@ -1,5 +1,7 @@
 <script lang="ts">
 	import 'iconify-icon';
+	import Login from '../components/Login.svelte';
+
 	const mockdata = [{
 	  title: 'Pesquisa Avançada',
 	  description: 'A nossa funcionalidade de pesquisa com integração num mapa interativo oferece aos utilizadores a oportunidade de explorar a nossa seleção de propriedades disponíveis e verificadas através de uma pesquisa fácil e conveniente. Através do uso de filtros personalizados, pode também refinar a sua pesquisa com base em critérios como localização, preço, dimensões, comodidades e muito mais. Encontre a casa perfeita com correspondência às suas necessidades, além de ter acesso a avaliações reais de inquilinos anteriores para as propriedades em questão.',
@@ -23,8 +25,10 @@
 	}, {
 	  title: 'Futura Funcionalidade de Reserva',
 	  description: 'Ainda que a nossa plataforma esteja atualmente focada em conectar arrendatários e proprietários, temos planos ambiciosos para expandir os nossos serviços. Num futuro próximo, a Evaclue irá implementar uma funcionalidade de reserva direta, aprimorando significativamente o processo de arrendamento. Mantenha-se atento a esta empolgante evolução que estará em breve ao seu dispor.',
-	  icon: 'mdi:cookie'
+	  icon: 'mdi:facebook'
 	}];
+
+
   </script>
 
 <div class="container mx-auto text-left p-4 md:text-center">
@@ -44,6 +48,8 @@
 		</div>
 	</div>
 </div>
+
+<Login />
 
   <div class="container mx-auto max-w-screen-lg ">
 	<div class="text-center space-y-4 p-4">
