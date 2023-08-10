@@ -9,20 +9,19 @@
 	import 'iconify-icon';
 	import NavBar from '../components/NavBar.svelte';
 	import { onMount } from "svelte";
-    import ChangeThemeButton from "../components/ChangeThemeButton.svelte";
     import getStoredTheme from "../utils/getStoredTheme";
     import theme from "../store/store";
   
-    //get stored theme from local storage
+    // Get Stored Theme From Local Storage
     onMount(() => {
       getStoredTheme();
     });
-    //onDOMLoaded
+    // onDOMLoaded
   
     async function storeTheme() {
-      //get stored theme from local storage wait for promise
+      // Get Stored Theme From Local Storage Wait For Promise
       await getStoredTheme().then((storedTheme) => {
-        //set theme to stored theme
+        // Set Theme to Stored Theme
         theme.set(storedTheme);
       });
     }
@@ -35,19 +34,9 @@
 	<svelte:fragment slot="header">
 
 		<!-- App Bar -->
-		<AppBar class="transparent-app-bar" gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
-			<!-- Left Corner -->
-			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Evaclue</strong>
-			</svelte:fragment>
-			<!-- Nav Bar -->
+		<!-- <AppBar> -->
 			<NavBar />
-			<!-- Right Corner -->
-			<svelte:fragment slot="trail">
-				<ChangeThemeButton />
-				<LightSwitch />
-			</svelte:fragment>
-		</AppBar>
+		<!-- </AppBar> -->
 	</svelte:fragment>
 
 	<!-- Page Route Content -->
