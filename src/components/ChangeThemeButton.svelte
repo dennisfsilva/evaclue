@@ -99,7 +99,7 @@
 </div>
 
 <button
-    class="btn variant-filled w-48 justify-between"
+    class="btn variant-ringed-surface w-48 justify-between"
     use:popup={popupCombobox}
 >
     <span class="capitalize">{$theme ?? "Themes"}</span>
