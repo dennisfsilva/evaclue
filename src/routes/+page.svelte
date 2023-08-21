@@ -1,5 +1,7 @@
 <script lang="ts">
 	import 'iconify-icon';
+	import Login from '../components/Login.svelte';
+	import ForgotPassword from '../components/ForgotPassword.svelte';
 
 	const mockdata = [{
 	  title: 'Pesquisa Avançada',
@@ -47,13 +49,11 @@
 	</div>
 </div>
 
-
-
   <div class="container mx-auto max-w-screen-lg ">
 	<div class="text-center space-y-4 p-4">
 	  <span class="badge variant-filled-primary uppercase">Evaclue</span>
-	  <div class="text-xl md:text-3xl font-bold"> Integrate effortlessly with any technology stack </div>
-	  <p class="max-w-xl opacity-60 mx-auto after:mx-auto after:mt-3 after:bg-primary-500 after:w-12 after:h-0.5 after:block"> Every once in a while, you’ll see a Golbat that’s missing some fangs. This happens when hunger drives it to try biting a Steel-type Pokémon. </p>
+	  <div class="text-xl md:text-3xl font-bold"> Avaliações confiáveis </div>
+	  <p class="max-w-xl opacity-60 mx-auto after:mx-auto after:mt-3 after:bg-primary-500 after:w-12 after:h-0.5 after:block"> A Evaclue está empenhada em fornecer uma plataforma segura e de fácil utilização que simplifique o processo de aluguer a longo prazo. Damos prioridade à sua paz de espírito e pretendemos criar um ecossistema onde a confiança, a transparência e a fiabilidade prosperam. </p>
 	</div>
 	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-16"> {#each mockdata as feature}
 			  
@@ -71,6 +71,4 @@
 	  </div>
   </div>
 
-  <div>
-	white-space: break-spaces;
-  </div>
+
